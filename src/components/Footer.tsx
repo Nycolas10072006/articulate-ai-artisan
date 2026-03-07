@@ -12,7 +12,7 @@ const Footer = () => {
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors">
             <Instagram className="w-5 h-5" />
           </a>
-          <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors font-body text-sm">
+          <a href="https://wa.me/5511993778796" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors font-body text-sm">
             WhatsApp
           </a>
         </div>
