@@ -14,10 +14,13 @@ const projects = [
   { image: kitchen2, title: "Cozinha Gourmet", category: "Cozinha" },
 ];
 
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
 const PortfolioSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   return (
     <section id="portfolio" className="py-24 md:py-32 px-6 bg-secondary">
-      <div className="max-w-7xl mx-auto">
+      <div ref={ref} className={`max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center mb-16">
           <p className="text-gold font-body text-sm tracking-[0.3em] uppercase mb-4">Portfólio</p>
           <h2 className="font-display text-4xl md:text-5xl text-foreground font-light">

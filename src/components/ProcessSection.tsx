@@ -6,10 +6,13 @@ const steps = [
   { number: "05", title: "Instalação", description: "Montagem profissional" },
 ];
 
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
 const ProcessSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
   return (
     <section className="py-24 md:py-32 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div ref={ref} className={`max-w-6xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center mb-16">
           <p className="text-gold font-body text-sm tracking-[0.3em] uppercase mb-4">Processo</p>
           <h2 className="font-display text-4xl md:text-5xl text-foreground font-light">
