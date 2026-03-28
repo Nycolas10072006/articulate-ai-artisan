@@ -2,15 +2,15 @@ import heroKitchen from "@/assets/hero-kitchen.jpg";
 import closet from "@/assets/portfolio-closet.jpg";
 import sala from "@/assets/portfolio-sala.jpg";
 import office from "@/assets/portfolio-office.jpg";
-import bedroom from "@/assets/portfolio-bedroom.jpg";
+import bedroom from "@/assets/portfolio-churrasqueira.jpg";
 import kitchen2 from "@/assets/portfolio-kitchen2.jpg";
 
 const projects = [
-  { image: heroKitchen, title: "Cozinha Contemporânea", category: "Cozinha" },
+  { image: heroKitchen, title: "Cozinha Studio", category: "Cozinha" },
   { image: closet, title: "Closet Master Suite", category: "Closet" },
   { image: sala, title: "Painel de Sala Integrado", category: "Sala" },
   { image: office, title: "Home Office Clássico", category: "Escritório" },
-  { image: bedroom, title: "Dormitório Master", category: "Dormitório" },
+  { image: bedroom, title: "Churrasqueira Gourmet", category: "Churrasqueira" },
   { image: kitchen2, title: "Cozinha Gourmet", category: "Cozinha" },
 ];
 
